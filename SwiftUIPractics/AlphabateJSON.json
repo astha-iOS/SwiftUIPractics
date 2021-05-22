@@ -1,0 +1,158 @@
+[
+    {
+        "id": 1,
+        "name": "A",
+        "description": "A for Apple.",
+        "image": "apple"
+    },
+    {
+        "id": 2,
+        "name": "B",
+        "description": "A for Ball.",
+        "image": "ball"
+    },
+    {
+        "id": 3,
+        "name": "C",
+        "description": "C for Cat.",
+        "image": "cat"
+    },
+    {
+        "id": 4,
+        "name": "D",
+        "description": "D for Dog.",
+        "image": "dog"
+    },
+    {
+        "id": 5,
+        "name": "E",
+        "description": "E for Elephant.",
+        "image": "elephant"
+    },
+    {
+        "id": 6,
+        "name": "F",
+        "description": "F for Fan.",
+        "image": "fan"
+    },
+    {
+        "id": 7,
+        "name": "G",
+        "description": "G for Gun.",
+        "image": "gun"
+    },
+    {
+        "id": 8,
+        "name": "H",
+        "description": "H for Hut.",
+        "image": "hut"
+    },
+    {
+        "id": 9,
+        "name": "I",
+        "description": "I for Ice-Cream.",
+        "image": "icecream"
+    },
+    {
+        "id": 10,
+        "name": "J",
+        "description": "J for Jug.",
+        "image": "jug"
+    },
+    {
+        "id": 11,
+        "name": "K",
+        "description": "K for Kite.",
+        "image": "kite"
+    },
+    {
+        "id": 12,
+        "name": "L",
+        "description": "L for Lion.",
+        "image": "lion"
+    },
+    {
+        "id": 13,
+        "name": "M",
+        "description": "M for Monkey.",
+        "image": "monkey"
+    },
+    {
+        "id": 14,
+        "name": "N",
+        "description": "N for Nose.",
+        "image": "nose"
+    },
+    {
+        "id": 15,
+        "name": "O",
+        "description": "O for Orange.",
+        "image": "orange"
+    },
+    {
+        "id": 16,
+        "name": "P",
+        "description": "P for Peacock.",
+        "image": "peacock"
+    },
+    {
+        "id": 17,
+        "name": "Q",
+        "description": "Q for Queen.",
+        "image": "queen"
+    },
+    {
+        "id": 18,
+        "name": "R",
+        "description": "R for Rat.",
+        "image": "rat"
+    },
+    {
+        "id": 19,
+        "name": "S",
+        "description": "S for Sun.",
+        "image": "sun"
+    },
+    {
+        "id": 20,
+        "name": "T",
+        "description": "T for Truck.",
+        "image": "truck"
+    },
+    {
+        "id": 21,
+        "name": "U",
+        "description": "U for Umbrella.",
+        "image": "umbrella"
+    },
+    {
+        "id": 22,
+        "name": "V",
+        "description": "V for Van.",
+        "image": "van"
+    },
+    {
+        "id": 23,
+        "name": "W",
+        "description": "W for Wolf.",
+        "image": "wolf"
+    },
+    {
+        "id": 24,
+        "name": "X",
+        "description": "X for X-max.",
+        "image": "xmax"
+    },
+    {
+        "id": 25,
+        "name": "Y",
+        "description": "Y for Yak.",
+        "image": "yak"
+    },
+    {
+        "id": 26,
+        "name": "Z",
+        "description": "Z for Zebra.",
+        "image": "zebra"
+    }
+]

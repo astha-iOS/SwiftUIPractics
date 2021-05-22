@@ -15,6 +15,9 @@
 		0746A4F3264E13F400C89483 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0746A4F1264E13F400C89483 /* LaunchScreen.storyboard */; };
 		0746A4FE264E13F400C89483 /* SwiftUIPracticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0746A4FD264E13F400C89483 /* SwiftUIPracticsTests.swift */; };
 		0746A509264E13F400C89483 /* SwiftUIPracticsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0746A508264E13F400C89483 /* SwiftUIPracticsUITests.swift */; };
+		075A4FE12654DDE8004478D5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075A4FE02654DDE8004478D5 /* DetailView.swift */; };
+		07CE26422658FC73001E8C00 /* AlphabateJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 07CE26412658FC73001E8C00 /* AlphabateJSON.json */; };
+		07CE266626593E1C001E8C00 /* pagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CE266526593E1C001E8C00 /* pagerView.swift */; };
 		07FE01992651457F009F6F7C /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 07FE01982651457F009F6F7C /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		0746A504264E13F400C89483 /* SwiftUIPracticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPracticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0746A508264E13F400C89483 /* SwiftUIPracticsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticsUITests.swift; sourceTree = "<group>"; };
 		0746A50A264E13F400C89483 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		075A4FE02654DDE8004478D5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		07CE26412658FC73001E8C00 /* AlphabateJSON.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AlphabateJSON.json; sourceTree = "<group>"; };
+		07CE266526593E1C001E8C00 /* pagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagerView.swift; sourceTree = "<group>"; };
 		07FE01982651457F009F6F7C /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +110,10 @@
 			children = (
 				0746A4E6264E13F300C89483 /* AppDelegate.swift */,
 				0746A4E8264E13F300C89483 /* SceneDelegate.swift */,
+				07CE266526593E1C001E8C00 /* pagerView.swift */,
 				0746A4EA264E13F300C89483 /* ContentView.swift */,
+				07CE26412658FC73001E8C00 /* AlphabateJSON.json */,
+				075A4FE02654DDE8004478D5 /* DetailView.swift */,
 				0746A4EC264E13F400C89483 /* Assets.xcassets */,
 				0746A4F1264E13F400C89483 /* LaunchScreen.storyboard */,
 				0746A4F4264E13F400C89483 /* Info.plist */,
@@ -243,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07FE01992651457F009F6F7C /* .gitignore in Resources */,
+				07CE26422658FC73001E8C00 /* AlphabateJSON.json in Resources */,
 				0746A4F3264E13F400C89483 /* LaunchScreen.storyboard in Resources */,
 				0746A4F0264E13F400C89483 /* Preview Assets.xcassets in Resources */,
 				0746A4ED264E13F400C89483 /* Assets.xcassets in Resources */,
@@ -271,8 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0746A4E7264E13F300C89483 /* AppDelegate.swift in Sources */,
+				075A4FE12654DDE8004478D5 /* DetailView.swift in Sources */,
 				0746A4E9264E13F300C89483 /* SceneDelegate.swift in Sources */,
 				0746A4EB264E13F300C89483 /* ContentView.swift in Sources */,
+				07CE266626593E1C001E8C00 /* pagerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

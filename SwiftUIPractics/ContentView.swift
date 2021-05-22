@@ -10,46 +10,41 @@ import UIKit
 import Foundation
 
 struct ContentView: View {
-   
+
     var body: some View {
         
-            VStack{
-            VStack{
-                Image("peacock")
+        NavigationView() {
+                    
+            List { ForEach(alphaList(), id: \.self) { item in
+                NavigationLink(destination: DetailView(item: item)){
+                HStack{
+                Image(item.image ?? "parrot")
                     .resizable()
-                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height/2.2, alignment: .center)
-            }.edgesIgnoringSafeArea(.top)
-                
-            VStack{
-                
-                List (0..<birdData.count) { index in
-                    let b = birdData[index]
-               
-                    Image(b.image)
-                        .resizable()
-                        .frame(width: 100, height: 100, alignment: .center)
-                        .clipped()
-                        
-                        .cornerRadius(10.0)
-                        .onTapGesture {
-                            print("Click bird")
-                               
-                        }
-
-                    VStack(alignment: .leading) {
-                        Text(b.name)
-                            .font(.headline)
-                            .colorScheme(.light)
-                        Text(b.description)
-                            .font(.subheadline)
-                        }
+                    .frame(width: 100, height: 100, alignment: .center)
+                    .clipped()
+                    .cornerRadius(10.0)
+                VStack(alignment: .leading) {
+                    Text("  \(item.name)")
+                        .font(.headline)
+                        .colorScheme(.light)
+                    Text("  \(item.description ?? "")")
+                        .font(.subheadline)
                     }
-                
-                
                 }
-            }
-        
+            }}
+            }.navigationTitle(Text(verbatim: "Alphabates List"))
     }
+                        
+    }
+    
+    func alphaList() -> [product]{
+        let url = Bundle.main.url(forResource: "AlphabateJSON", withExtension: "json")!
+        let data = try! Data(contentsOf: url)
+        let decoder = JSONDecoder()
+        let products = try? decoder.decode([product].self, from: data)
+        return products!
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -60,36 +55,10 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct BirdView : View {
-    
-    var data : Bird
-    
-    var body: some View{
-        HStack{
-            Image(self.data.image)
-            VStack(alignment: .leading, spacing: 5, content: {
-                Text(self.data.name)
-                    .font(.headline)
-                    .colorScheme(.light)
-                Text(self.data.description)
-                    .font(.subheadline)
-                    
-            })
-        }
-    }
+struct product: Codable, Hashable {
+    var name: String
+    var id: Int
+    var description: String?
+    var image: String?
     
 }
-
-struct Bird : Identifiable {
-    var id : Int
-    var image : String
-    var name : String
-    var description : String
-}
-
-var birdData = [
-    Bird(id: 1, image: "parrot", name: "Parrot", description: "Having green color"),
-    Bird(id: 2, image: "pigeon", name: "Pigeon", description: "Having gray color"),
-    Bird(id: 3, image: "peacock", name: "Peacock", description: "Having Blue color")
-
-]
